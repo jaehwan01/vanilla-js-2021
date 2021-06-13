@@ -1,3 +1,5 @@
+@import "reset.css";
+
 body {
   background-color: #2c3e50;
 }
@@ -10,17 +12,13 @@ body {
   color: #34495e;
 }
 
-.clicked {
-  color: #7f8c8d;
-}
-
 .form,
 .greetings {
   display: none;
 }
 
-.showing {
-  display: block;
+.clicked {
+  color: #7f8c8d;
 }
 
 @keyframes fadeIn {
@@ -40,4 +38,85 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 1s linear;
+}
+
+.js-clock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.js-clock span {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.js-clock h4 {
+  color: white;
+}
+
+.js-greetings {
+  color: white;
+}
+
+.js-toDoList,
+.js-toDoList li {
+  color: white;
+  margin-left: 40px;
+}
+
+.js-toDoList li {
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.js-weather {
+  color: white;
+}
+
+.js-form input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-size: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.js-toDoForm input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.js-greetings {
+  font-size: 80px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.js-form input::placeholder,
+.js-toDoForm input::placeholder {
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.js-toDoList li button {
+  background-color: transparent;
+  border: none;
+}
+
+.js-clock h4 {
+  font-size: 180px;
+}
+
+.showing {
+  display: block;
 }
